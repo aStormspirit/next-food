@@ -1,0 +1,58 @@
+.container {
+    background-color: #222;
+    display: flex;
+    padding: 1% 2% 2% 6%;
+}
+
+.item {
+    flex: 1;
+    position: relative;
+    display: flex;
+}
+
+.desc{
+    color: white;
+}
+
+.link{
+    color: rgb(94, 90, 90);
+}
+
+.link:hover{
+    color: white;
+}
+
+.list{
+    list-style: none;
+}
+
+.listItem{
+    margin-bottom: 6px;
+    color: white;
+    font-size: 16px;
+}
+
+.icons{
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons>div{
+    margin: 10px;
+    width: 40px;
+}
+
+.icons>div>svg{
+    cursor: pointer;
+    transform: scale(2.5);
+    fill: gray;
+}
+
+@media screen and (max-width:480px){
+    .item:nth-child(2){
+        display: none;
+    }
+}
