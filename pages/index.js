@@ -6,7 +6,6 @@ import styles from '../styles/Home.module.css'
 import axios from 'axios'
 
 export default function Home({productsList}) {
-  console.log(productsList)
   return (
     <div className={styles.container}>
       <Head>
