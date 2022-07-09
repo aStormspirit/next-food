@@ -21,7 +21,7 @@ export default function Home({productsList}) {
 
 export const getServerSideProps = async () => {
 
-  const res = await axios.get(`http://${process.env.API_URL}/api/products`)
+  const res = await axios.get(`https://${process.env.API_URL}/api/products`)
   return {
     props: {
       productsList: res.data
